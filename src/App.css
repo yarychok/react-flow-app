@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0,
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.multiselect-container {
+  display: inline-block;
+  position: relative;
+}
+
+.multiselect-selected-values {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.arrow .open {
+  transform: rotate(1080deg);
+}
+
+.multiselect-options {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 100%;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: #fff;
+  padding: 4px;
+}
+
+.multiselect-option {
+  display: block;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.multiselect-option input {
+  margin-right: 8px;
+}
+
+.custom-node {
+  display: inline-block;
+  width: 250px;
+  min-height: 140px;
+  background: #000;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.node-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.node-textarea {
+  height: 90px;
+  resize: none;
+  border-radius: 4px;
+  outline: none;
+}
